@@ -2,10 +2,428 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=index.html#contact">
-    <title>Contact - Brew & Bean</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Brew & Bean - Reserve a cozy table, inquire about private coffee tastings, or visit our artisanal coffeehouse on Espresso Lane.">
+    <title>Contact & Reservations | Brew & Bean Coffee House</title>
+
+    <!-- Google Fonts: Playfair Display & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Dedicated Contact Stylesheet -->
+    <link rel="stylesheet" href="CSS/contact.css">
 </head>
 <body>
-    <p>Redirecting to <a href="index.html#contact">Brew & Bean - Contact & Reservations</a>...</p>
+
+    <!-- =========================================================================
+         HEADER / NAVBAR
+         ========================================================================= -->
+    <header class="header">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                </div>
+                <span>Brew & Bean</span>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="nav-menu" aria-label="Main Navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="index.html#offers" class="nav-link">Offers</a>
+                <a href="index.html#gallery" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+
+            <!-- Nav Action & Mobile Button -->
+            <div class="nav-cta">
+                <a href="menu.html" class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <span>Order Ahead</span>
+                </a>
+
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Drawer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer & Backdrop -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <aside class="mobile-menu" id="mobileMenu" aria-label="Mobile Navigation">
+        <div>
+            <div class="logo" style="margin-bottom: 28px;">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                </div>
+                <span>Brew & Bean</span>
+            </div>
+            <nav class="mobile-nav-list">
+                <a href="index.html" class="mobile-nav-link">Home <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="about.html" class="mobile-nav-link">About <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="menu.html" class="mobile-nav-link">Menu <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="index.html#offers" class="mobile-nav-link">Offers <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="index.html#gallery" class="mobile-nav-link">Gallery <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="contact.html" class="mobile-nav-link active">Contact <i class="fa-solid fa-chevron-right"></i></a>
+            </nav>
+        </div>
+
+        <div style="font-size: 0.9rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 20px;">
+            <p style="margin-bottom: 8px;"><i class="fa-solid fa-location-dot" style="color: var(--accent-gold); margin-right: 8px;"></i> 124 Espresso Lane, Roast District</p>
+            <p><i class="fa-solid fa-clock" style="color: var(--accent-gold); margin-right: 8px;"></i> Daily: 7:00 AM - 10:00 PM</p>
+        </div>
+    </aside>
+
+    <main>
+        <!-- =========================================================================
+             CONTACT HERO
+             ========================================================================= -->
+        <section class="contact-hero">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>Contact Us</span>
+                </nav>
+
+                <div class="badge-tag">
+                    <i class="fa-solid fa-handshake"></i>
+                    <span>Get In Touch</span>
+                </div>
+
+                <h1 class="contact-hero-title">
+                    CONTACT & <span>RESERVATIONS</span>
+                </h1>
+
+                <p class="contact-hero-subtitle">
+                    Step inside our cozy haven or book your favorite table ☕
+                </p>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             CONTACT INFO CARDS & FORM SECTION
+             ========================================================================= -->
+        <section class="contact-main-section">
+            <div class="container">
+                <!-- Info Cards -->
+                <div class="info-cards-grid">
+                    <!-- Location -->
+                    <div class="info-card">
+                        <div class="info-icon-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3 class="info-card-title">Our Location</h3>
+                        <p class="info-card-text">
+                            124 Espresso Lane<br>
+                            Roast District, NY 10012
+                        </p>
+                    </div>
+
+                    <!-- Operating Hours -->
+                    <div class="info-card">
+                        <div class="info-icon-box">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h3 class="info-card-title">Brewing Hours</h3>
+                        <p class="info-card-text">
+                            Mon - Fri: 7:00 AM - 10:00 PM<br>
+                            Sat - Sun: 8:00 AM - 11:00 PM
+                        </p>
+                    </div>
+
+                    <!-- Direct Phone -->
+                    <div class="info-card">
+                        <div class="info-icon-box">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <h3 class="info-card-title">Call The Barista</h3>
+                        <p class="info-card-text">
+                            +1 (555) 382-2326<br>
+                            Takeaway orders & questions
+                        </p>
+                    </div>
+
+                    <!-- Email Inquiries -->
+                    <div class="info-card">
+                        <div class="info-icon-box">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+                        <h3 class="info-card-title">Email Us</h3>
+                        <p class="info-card-text">
+                            hello@brewandbean.com<br>
+                            events@brewandbean.com
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Reservation Form & Map Layout -->
+                <div class="contact-layout">
+                    <!-- Booking Form -->
+                    <div class="booking-form-card">
+                        <div class="form-header">
+                            <span class="badge-tag">Seamless Hospitality</span>
+                            <h3>Reserve Your Coffee Table</h3>
+                            <p>Planning a casual meeting, a quiet reading session, or a weekend brunch? Book your table in advance and skip the line.</p>
+                        </div>
+
+                        <form id="bookingForm" class="form-grid">
+                            <div class="form-group">
+                                <label for="bookName" class="form-label">Full Name *</label>
+                                <input type="text" id="bookName" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bookEmail" class="form-label">Email Address *</label>
+                                <input type="email" id="bookEmail" class="form-input" placeholder="sarah@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bookPhone" class="form-label">Phone Number *</label>
+                                <input type="tel" id="bookPhone" class="form-input" placeholder="+1 (555) 000-0000" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bookGuests" class="form-label">Number of Guests *</label>
+                                <select id="bookGuests" class="form-select" required>
+                                    <option value="1 Guest">1 Guest (Solo Study / Work)</option>
+                                    <option value="2 Guests" selected>2 Guests (Coffee Date)</option>
+                                    <option value="3 Guests">3 Guests</option>
+                                    <option value="4 Guests">4 Guests</option>
+                                    <option value="5-8 Guests">5-8 Guests (Small Group)</option>
+                                    <option value="8+ Guests">8+ Guests (Private Area)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bookDate" class="form-label">Reservation Date *</label>
+                                <input type="date" id="bookDate" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bookTime" class="form-label">Preferred Time *</label>
+                                <select id="bookTime" class="form-select" required>
+                                    <option>08:00 AM (Early Roast)</option>
+                                    <option>09:30 AM (Morning Rush)</option>
+                                    <option>11:00 AM (Late Morning)</option>
+                                    <option>01:00 PM (Afternoon Brew)</option>
+                                    <option>03:30 PM (Pastry Hour)</option>
+                                    <option>05:30 PM (Evening Chill)</option>
+                                    <option>07:30 PM (Late Sips)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="bookSeating" class="form-label">Seating Preference</label>
+                                <select id="bookSeating" class="form-select">
+                                    <option value="Cozy Leather Booth">Cozy Leather Booth (Quiet & Intimate)</option>
+                                    <option value="Sunny Patio Garden">Sunny Patio Garden (Fresh Air & Pet Friendly)</option>
+                                    <option value="Barista Tasting Bar">Barista Bar (Watch Pour-Overs & Espresso Pulls)</option>
+                                    <option value="Workstation Table">Work Station (High-Speed Wi-Fi & Power Outlets)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="bookNotes" class="form-label">Special Requests or Dietary Notes</label>
+                                <textarea id="bookNotes" class="form-textarea" placeholder="Celebrate a birthday, request baby highchair, allergy notices, or oat milk preference..."></textarea>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <button type="submit" class="btn btn-primary form-submit-btn">
+                                    <i class="fa-regular fa-calendar-check"></i>
+                                    <span>Confirm Table Reservation</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Sidebar Map & Atmosphere -->
+                    <div class="contact-side-col">
+                        <div class="map-card">
+                            <div class="map-image-wrap">
+                                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=700&q=80" alt="Brew & Bean Cozy Café Interior">
+                                <div class="map-pin-overlay">
+                                    <i class="fa-solid fa-location-dot map-pin-icon"></i>
+                                    <strong style="margin-top: 8px;">124 Espresso Lane</strong>
+                                </div>
+                            </div>
+                            <div class="map-card-body">
+                                <h4>Visit Our Roastery & Café</h4>
+                                <p>
+                                    Conveniently located in the heart of the Roast District, just two blocks from the Metro Central Station. On-site bicycle racks and 2-hour free customer parking in the rear.
+                                </p>
+                                <button class="btn btn-outline directions-btn" id="getDirectionsBtn">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <span>Copy Address & Directions</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Private Events Card -->
+                        <div class="info-card" style="text-align: left; padding: 30px;">
+                            <span class="badge-tag" style="margin-bottom: 8px;">Gatherings</span>
+                            <h4 style="font-size: 1.3rem; margin-bottom: 10px;">Hosting a Private Event?</h4>
+                            <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 16px;">
+                                Book our private mezzanine for book clubs, team off-sites, wedding rehearsals, or private barista cupping sessions.
+                            </p>
+                            <a href="mailto:events@brewandbean.com" class="btn btn-primary btn-sm">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Inquire via Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             FREQUENTLY ASKED QUESTIONS (FAQ)
+             ========================================================================= -->
+        <section class="faq-section">
+            <div class="container faq-container">
+                <div class="section-header">
+                    <span class="badge-tag">Quick Answers</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know before visiting Brew & Bean</p>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer dairy-free and vegan beverage options?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely! We stock certified organic Oatly Oat Milk, Almond Milk, Soy Milk, and Coconut Milk. Furthermore, our house-made dark chocolate mocha sauce and caramel drizzle are 100% vegan.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is high-speed Wi-Fi available for remote work?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer complimentary 300 Mbps fiber Wi-Fi throughout the café. Dedicated workstation tables equipped with AC outlets and USB-C rapid charging ports are available in the upper quiet lounge.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Are dogs allowed at Brew & Bean?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Well-behaved dogs on leashes are warmly welcomed on our outdoor patio garden! Ask your barista for a complimentary fresh water bowl and a handmade dog biscuit treat.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I buy whole-bean or freshly ground coffee to take home?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Certainly. We sell 250g and 1kg bags of all our single-origin roasts and espresso house blends. Our baristas will happily grind the beans on-demand for French Press, Pour-Over, Chemex, Aeropress, or Espresso machine use.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================================================
+         FOOTER
+         ========================================================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1: Brand -->
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fa-solid fa-mug-saucer"></i>
+                        </div>
+                        <span>Brew & Bean</span>
+                    </a>
+                    <p>
+                        Artisanal coffee house dedicated to micro-batch roasting, ethically sourced beans, and creating warm welcoming moments one cup at a time.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+                        <li><a href="menu.html"><i class="fa-solid fa-angle-right"></i> Our Menu</a></li>
+                        <li><a href="index.html#offers"><i class="fa-solid fa-angle-right"></i> Special Deals</a></li>
+                        <li><a href="index.html#gallery"><i class="fa-solid fa-angle-right"></i> Café Gallery</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact & Booking</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Hours & Location -->
+                <div>
+                    <h4 class="footer-title">Opening Hours</h4>
+                    <p style="color: var(--accent-light); font-size: 0.92rem; margin-bottom: 8px;">
+                        <strong>Mon - Fri:</strong><br> 7:00 AM - 10:00 PM
+                    </p>
+                    <p style="color: var(--accent-light); font-size: 0.92rem; margin-bottom: 12px;">
+                        <strong>Sat - Sun:</strong><br> 8:00 AM - 11:00 PM
+                    </p>
+                    <p style="color: var(--accent-light); font-size: 0.88rem;">
+                        <i class="fa-solid fa-location-dot" style="color: var(--accent-gold);"></i> 124 Espresso Lane, Roast District
+                    </p>
+                </div>
+
+                <!-- Col 4: Newsletter -->
+                <div class="footer-newsletter">
+                    <h4 class="footer-title">Join Brew Club</h4>
+                    <p>Subscribe for secret coffee drops, tasting events, and 15% off your next visit.</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Your email address..." required>
+                        <button type="submit" class="newsletter-btn">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Brew & Bean Coffee House. All rights reserved.</p>
+                <span>Brewed with <i class="fa-solid fa-heart"></i> for coffee enthusiasts worldwide.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notifications Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Interactive JavaScript -->
+    <script src="JS/contact.js"></script>
 </body>
 </html>

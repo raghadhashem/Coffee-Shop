@@ -37,12 +37,10 @@
             <nav class="nav-menu">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="about.html" class="nav-link">About</a>
-                <a href="#specialties" class="nav-link">Specialties</a>
-                <a href="#menu" class="nav-link">Menu</a>
+                <a href="menu.html" class="nav-link">Menu</a>
                 <a href="#offers" class="nav-link">Offers</a>
                 <a href="#gallery" class="nav-link">Gallery</a>
-                <a href="#testimonials" class="nav-link">Testimonials</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </nav>
 
             <!-- Nav Action CTA -->
@@ -74,12 +72,10 @@
             <nav class="mobile-nav-list">
                 <a href="#home" class="mobile-nav-link active">Home <i class="fa-solid fa-chevron-right"></i></a>
                 <a href="about.html" class="mobile-nav-link">About <i class="fa-solid fa-chevron-right"></i></a>
-                <a href="#specialties" class="mobile-nav-link">Specialties <i class="fa-solid fa-chevron-right"></i></a>
-                <a href="#menu" class="mobile-nav-link">Menu <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="menu.html" class="mobile-nav-link">Menu <i class="fa-solid fa-chevron-right"></i></a>
                 <a href="#offers" class="mobile-nav-link">Offers <i class="fa-solid fa-chevron-right"></i></a>
                 <a href="#gallery" class="mobile-nav-link">Gallery <i class="fa-solid fa-chevron-right"></i></a>
-                <a href="#testimonials" class="mobile-nav-link">Testimonials <i class="fa-solid fa-chevron-right"></i></a>
-                <a href="#contact" class="mobile-nav-link">Contact <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="contact.html" class="mobile-nav-link">Contact <i class="fa-solid fa-chevron-right"></i></a>
             </nav>
         </div>
 
@@ -449,33 +445,61 @@
         <section class="section menu-section" id="menu">
             <div class="container">
                 <div class="section-header reveal">
-                    <span class="badge-tag">Crafted With Care</span>
-                    <h2 class="section-title">Our <span>Menu Preview</span></h2>
-                    <p class="section-subtitle">
-                        From classic velvet lattes to slow-steeped cold brews and sweet pastries, savor our most celebrated selections.
-                    </p>
+                    <span class="badge-tag">Handcrafted Selections</span>
+                    <h2 class="section-title">OUR MENU</h2>
+                    <p class="section-subtitle">Choose Your Favorite ☕</p>
                 </div>
 
                 <!-- Menu Filter Buttons -->
                 <div class="menu-filter-container reveal">
                     <button class="menu-filter-btn active" data-filter="all">
-                        <i class="fa-solid fa-border-all"></i> All Items
+                        <i class="fa-solid fa-border-all"></i> All
                     </button>
-                    <button class="menu-filter-btn" data-filter="hot">
-                        <i class="fa-solid fa-mug-hot"></i> Hot Coffee
+                    <button class="menu-filter-btn" data-filter="coffee">
+                        <i class="fa-solid fa-mug-hot"></i> Coffee
                     </button>
-                    <button class="menu-filter-btn" data-filter="cold">
-                        <i class="fa-solid fa-snowflake"></i> Cold & Iced
+                    <button class="menu-filter-btn" data-filter="drinks">
+                        <i class="fa-solid fa-glass-water"></i> Drinks
                     </button>
-                    <button class="menu-filter-btn" data-filter="bakery">
-                        <i class="fa-solid fa-cookie-bite"></i> Bakery & Sweets
+                    <button class="menu-filter-btn" data-filter="desserts">
+                        <i class="fa-solid fa-cake-candles"></i> Desserts
                     </button>
                 </div>
 
                 <!-- Menu Cards Grid -->
                 <div class="menu-grid">
-                    <!-- Item 1: Latte -->
-                    <div class="menu-card reveal" data-category="hot">
+                    <!-- Item 1: Cappuccino -->
+                    <div class="menu-card reveal" data-category="coffee">
+                        <div class="menu-img-wrap">
+                            <span class="menu-tag">Signature</span>
+                            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=80" 
+                                 alt="Artisan Cappuccino" 
+                                 loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <div>
+                                <div class="menu-card-top">
+                                    <h3 class="menu-item-title">Cappuccino</h3>
+                                    <span class="menu-item-price">$4.00</span>
+                                </div>
+                                <p class="menu-item-desc">
+                                    Equal parts rich espresso, steamed milk, and a thick airy foam cap dusted with Dutch dark cocoa powder.
+                                </p>
+                            </div>
+                            <div class="menu-card-bottom">
+                                <div class="menu-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>4.9 (420)</span>
+                                </div>
+                                <button class="menu-order-btn" title="Add to order" aria-label="Order Cappuccino">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Latte -->
+                    <div class="menu-card reveal reveal-delay-1" data-category="coffee">
                         <div class="menu-img-wrap">
                             <span class="menu-tag">Bestseller</span>
                             <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=700&q=80" 
@@ -485,11 +509,11 @@
                         <div class="menu-card-body">
                             <div>
                                 <div class="menu-card-top">
-                                    <h3 class="menu-item-title">Classic Velvet Latte</h3>
-                                    <span class="menu-item-price">$4.80</span>
+                                    <h3 class="menu-item-title">Latte</h3>
+                                    <span class="menu-item-price">$4.50</span>
                                 </div>
                                 <p class="menu-item-desc">
-                                    Silky micro-foam steamed milk over a bold double shot of signature espresso roast with gentle vanilla notes.
+                                    Silky micro-foam steamed milk poured over a bold double shot of signature espresso roast with gentle vanilla notes.
                                 </p>
                             </div>
                             <div class="menu-card-bottom">
@@ -497,217 +521,127 @@
                                     <i class="fa-solid fa-star"></i>
                                     <span>4.9 (480)</span>
                                 </div>
-                                <button class="menu-order-btn" title="Add to order" aria-label="Order Classic Velvet Latte">
+                                <button class="menu-order-btn" title="Add to order" aria-label="Order Latte">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 2: Cappuccino -->
-                    <div class="menu-card reveal reveal-delay-1" data-category="hot">
+                    <!-- Item 3: Americano -->
+                    <div class="menu-card reveal reveal-delay-2" data-category="coffee">
                         <div class="menu-img-wrap">
-                            <span class="menu-tag">Signature</span>
-                            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=80" 
-                                 alt="Artisan Classic Cappuccino" 
+                            <span class="menu-tag">Classic</span>
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80" 
+                                 alt="Rich Americano" 
                                  loading="lazy">
                         </div>
                         <div class="menu-card-body">
                             <div>
                                 <div class="menu-card-top">
-                                    <h3 class="menu-item-title">Artisan Cappuccino</h3>
-                                    <span class="menu-item-price">$4.50</span>
+                                    <h3 class="menu-item-title">Americano</h3>
+                                    <span class="menu-item-price">$3.50</span>
                                 </div>
                                 <p class="menu-item-desc">
-                                    Equal parts rich espresso, steamed milk, and a thick airy foam cap dusted with Dutch dark cocoa powder.
+                                    Handcrafted double espresso poured gently over hot purified water for a bold, clean, and deeply aromatic cup.
                                 </p>
                             </div>
                             <div class="menu-card-bottom">
                                 <div class="menu-rating">
                                     <i class="fa-solid fa-star"></i>
-                                    <span>4.8 (390)</span>
+                                    <span>4.8 (310)</span>
                                 </div>
-                                <button class="menu-order-btn" title="Add to order" aria-label="Order Artisan Cappuccino">
+                                <button class="menu-order-btn" title="Add to order" aria-label="Order Americano">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 3: Iced Coffee -->
-                    <div class="menu-card reveal reveal-delay-2" data-category="cold">
-                        <div class="menu-img-wrap">
-                            <span class="menu-tag">Popular</span>
-                            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80" 
-                                 alt="Vanilla Sweet Cream Iced Coffee" 
-                                 loading="lazy">
-                        </div>
-                        <div class="menu-card-body">
-                            <div>
-                                <div class="menu-card-top">
-                                    <h3 class="menu-item-title">Vanilla Sweet Iced</h3>
-                                    <span class="menu-item-price">$5.25</span>
-                                </div>
-                                <p class="menu-item-desc">
-                                    Cold brewed over 18 hours, served over crystal ice blocks with house-made Madagascar vanilla cream cascade.
-                                </p>
-                            </div>
-                            <div class="menu-card-bottom">
-                                <div class="menu-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>4.9 (520)</span>
-                                </div>
-                                <button class="menu-order-btn" title="Add to order" aria-label="Order Vanilla Sweet Iced">
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 4: Caramel Macchiato -->
-                    <div class="menu-card reveal" data-category="hot">
+                    <!-- Item 4: Cheesecake -->
+                    <div class="menu-card reveal" data-category="desserts">
                         <div class="menu-img-wrap">
                             <span class="menu-tag">Chef's Choice</span>
-                            <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=700&q=80" 
-                                 alt="Caramel Cloud Macchiato" 
+                            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=80" 
+                                 alt="Artisan Cheesecake" 
                                  loading="lazy">
                         </div>
                         <div class="menu-card-body">
                             <div>
                                 <div class="menu-card-top">
-                                    <h3 class="menu-item-title">Caramel Macchiato</h3>
-                                    <span class="menu-item-price">$5.50</span>
+                                    <h3 class="menu-item-title">Cheesecake</h3>
+                                    <span class="menu-item-price">$5.00</span>
                                 </div>
                                 <p class="menu-item-desc">
-                                    Freshly steamed milk with vanilla syrup, marked with espresso shots and cross-hatched with salted butter caramel.
+                                    Smooth, velvety New York baked cheesecake infused with real Bourbon vanilla on a buttery golden crust.
                                 </p>
                             </div>
                             <div class="menu-card-bottom">
                                 <div class="menu-rating">
                                     <i class="fa-solid fa-star"></i>
-                                    <span>4.9 (310)</span>
+                                    <span>5.0 (390)</span>
                                 </div>
-                                <button class="menu-order-btn" title="Add to order" aria-label="Order Caramel Macchiato">
+                                <button class="menu-order-btn" title="Add to order" aria-label="Order Cheesecake">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 5: Espresso Cortado -->
-                    <div class="menu-card reveal reveal-delay-1" data-category="hot">
-                        <div class="menu-img-wrap">
-                            <span class="menu-tag">Strong</span>
-                            <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=700&q=80" 
-                                 alt="Double Shot Espresso Cortado" 
-                                 loading="lazy">
-                        </div>
-                        <div class="menu-card-body">
-                            <div>
-                                <div class="menu-card-top">
-                                    <h3 class="menu-item-title">Espresso Cortado</h3>
-                                    <span class="menu-item-price">$3.90</span>
-                                </div>
-                                <p class="menu-item-desc">
-                                    Pure intensity cut with equal volume of warm steamed milk in a Spanish Gibraltar glass.
-                                </p>
-                            </div>
-                            <div class="menu-card-bottom">
-                                <div class="menu-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>4.7 (195)</span>
-                                </div>
-                                <button class="menu-order-btn" title="Add to order" aria-label="Order Espresso Cortado">
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 6: Iced Cold Brew -->
-                    <div class="menu-card reveal reveal-delay-2" data-category="cold">
-                        <div class="menu-img-wrap">
-                            <span class="menu-tag">Organic</span>
-                            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80" 
-                                 alt="Nitro Cold Brew" 
-                                 loading="lazy">
-                        </div>
-                        <div class="menu-card-body">
-                            <div>
-                                <div class="menu-card-top">
-                                    <h3 class="menu-item-title">Single-Origin Cold Brew</h3>
-                                    <span class="menu-item-price">$4.95</span>
-                                </div>
-                                <p class="menu-item-desc">
-                                    Steeped with cold spring water for 24 hours, presenting chocolate body and clean fruity blackberry finish.
-                                </p>
-                            </div>
-                            <div class="menu-card-bottom">
-                                <div class="menu-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>4.8 (260)</span>
-                                </div>
-                                <button class="menu-order-btn" title="Add to order" aria-label="Order Cold Brew">
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 7: Almond Croissant -->
-                    <div class="menu-card reveal" data-category="bakery">
+                    <!-- Item 5: Croissant -->
+                    <div class="menu-card reveal reveal-delay-1" data-category="desserts">
                         <div class="menu-img-wrap">
                             <span class="menu-tag">Baked Daily</span>
                             <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80" 
-                                 alt="Almond Butter Croissant" 
+                                 alt="Fresh French Croissant" 
                                  loading="lazy">
                         </div>
                         <div class="menu-card-body">
                             <div>
                                 <div class="menu-card-top">
-                                    <h3 class="menu-item-title">Almond Croissant</h3>
-                                    <span class="menu-item-price">$4.20</span>
+                                    <h3 class="menu-item-title">Croissant</h3>
+                                    <span class="menu-item-price">$3.00</span>
                                 </div>
                                 <p class="menu-item-desc">
-                                    Twice-baked flaky French croissant filled with velvety frangipane almond cream and toasted almond slices.
+                                    Flaky, golden-brown authentic Parisian butter croissant baked fresh every morning with delicate crisp layers.
                                 </p>
                             </div>
                             <div class="menu-card-bottom">
                                 <div class="menu-rating">
                                     <i class="fa-solid fa-star"></i>
-                                    <span>4.9 (410)</span>
+                                    <span>4.9 (450)</span>
                                 </div>
-                                <button class="menu-order-btn" title="Add to order" aria-label="Order Almond Croissant">
+                                <button class="menu-order-btn" title="Add to order" aria-label="Order Croissant">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 8: Basque Cheesecake -->
-                    <div class="menu-card reveal reveal-delay-1" data-category="bakery">
+                    <!-- Item 6: Iced Latte -->
+                    <div class="menu-card reveal reveal-delay-2" data-category="drinks">
                         <div class="menu-img-wrap">
-                            <span class="menu-tag">Sweet Delight</span>
-                            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=80" 
-                                 alt="Basque Burnt Cheesecake" 
+                            <span class="menu-tag">Refreshing</span>
+                            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80" 
+                                 alt="Cold Iced Latte" 
                                  loading="lazy">
                         </div>
                         <div class="menu-card-body">
                             <div>
                                 <div class="menu-card-top">
-                                    <h3 class="menu-item-title">Basque Cheesecake</h3>
-                                    <span class="menu-item-price">$6.50</span>
+                                    <h3 class="menu-item-title">Iced Latte</h3>
+                                    <span class="menu-item-price">$4.50</span>
                                 </div>
                                 <p class="menu-item-desc">
-                                    Caramelized top with an ultra-creamy, molten cheese center infused with real Bourbon vanilla beans.
+                                    Chilled farm-fresh milk layered over a bold double espresso and crystal ice cubes for a revitalizing taste.
                                 </p>
                             </div>
                             <div class="menu-card-bottom">
                                 <div class="menu-rating">
                                     <i class="fa-solid fa-star"></i>
-                                    <span>5.0 (380)</span>
+                                    <span>4.9 (510)</span>
                                 </div>
-                                <button class="menu-order-btn" title="Add to order" aria-label="Order Basque Cheesecake">
+                                <button class="menu-order-btn" title="Add to order" aria-label="Order Iced Latte">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                             </div>
@@ -1212,6 +1146,6 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>
