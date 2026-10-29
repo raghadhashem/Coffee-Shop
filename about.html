@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Brew & Bean - Artisanal coffee house dedicated to ethically sourced beans, micro-roasting, and warm community hospitality.">
+    <title>About Us | Brew & Bean Coffee House</title>
+
+    <!-- Google Fonts: Playfair Display & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom About Us Stylesheet -->
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <!-- =========================================================================
+         HEADER / NAVBAR
+         ========================================================================= -->
+    <header class="header">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                </div>
+                <span>Brew & Bean</span>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="index.html#menu" class="nav-link">Menu</a>
+                <a href="index.html#offers" class="nav-link">Offers</a>
+                <a href="index.html#gallery" class="nav-link">Gallery</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Nav Action & Mobile Button -->
+            <div class="nav-cta">
+                <a href="index.html#contact" class="btn btn-primary btn-sm">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    <span>Visit Us</span>
+                </a>
+
+                <!-- Hamburger Button -->
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer & Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <aside class="mobile-menu" id="mobileMenu">
+        <div>
+            <div class="logo" style="margin-bottom: 28px;">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                </div>
+                <span>Brew & Bean</span>
+            </div>
+            <nav class="mobile-nav-list">
+                <a href="index.html" class="mobile-nav-link">Home <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="about.html" class="mobile-nav-link active">About <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="index.html#menu" class="mobile-nav-link">Menu <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="index.html#offers" class="mobile-nav-link">Offers <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="index.html#gallery" class="mobile-nav-link">Gallery <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="index.html#contact" class="mobile-nav-link">Contact <i class="fa-solid fa-chevron-right"></i></a>
+            </nav>
+        </div>
+
+        <div class="mobile-contact-snippet">
+            <p><i class="fa-solid fa-location-dot"></i> 124 Espresso Lane, Roast District</p>
+            <p><i class="fa-solid fa-clock"></i> Daily: 7:00 AM - 10:00 PM</p>
+        </div>
+    </aside>
+
+    <main>
+        <!-- =========================================================================
+             HERO / TITLE SECTION
+             ========================================================================= -->
+        <section class="about-hero">
+            <div class="container about-hero-content">
+                <div class="about-hero-badge">
+                    <i class="fa-solid fa-seedling"></i>
+                    <span>Our Craft & Heritage</span>
+                </div>
+
+                <h1 class="about-hero-title">
+                    ABOUT <span>US</span>
+                </h1>
+
+                <p class="about-hero-subtitle">
+                    More Than Just Coffee ☕
+                </p>
+
+                <div class="about-hero-divider"></div>
+
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>About Us</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             OUR STORY SECTION (2-COLUMN GRID/FLEX LAYOUT)
+             ========================================================================= -->
+        <section class="section story-section" id="story">
+            <div class="container">
+                <div class="story-grid">
+                    <!-- Left Column: Cafe Interior / Atmosphere Image Container -->
+                    <div class="story-image-column reveal">
+                        <div class="story-image-card">
+                            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Warm and cozy interior of Brew and Bean coffee shop with wooden tables and ambient lighting" 
+                                 class="story-img"
+                                 loading="lazy">
+                        </div>
+
+                        <!-- Floating Milestone Card -->
+                        <div class="story-floating-badge">
+                            <div class="badge-icon-box">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div class="badge-content">
+                                <strong>Est. 2021</strong>
+                                <span>5 Years of Craft Coffee</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Story Text Box / Card -->
+                    <div class="story-card-box reveal reveal-delay-1">
+                        <span class="badge-tag">Our Journey & Roots</span>
+                        
+                        <h2 class="story-lead-title">
+                            Our <span>Story</span>
+                        </h2>
+
+                        <p class="story-lead-p">
+                            We started Brew & Bean with a simple idea: that coffee should be an experience, not just a morning routine. What began as a humble espresso cart fueled by pure devotion has blossomed into a beloved neighborhood sanctuary for coffee enthusiasts and dreamers alike.
+                        </p>
+
+                        <p class="story-body-p">
+                            From the misty highlands of Yirgacheffe in Ethiopia to the lush volcanic soils of Antioquia in Colombia, we partner directly with independent family-owned farms who cherish sustainable agroforestry. We bring these exceptional beans home and roast them slowly in small batches right before your eyes—unlocking exquisite floral bouquets, toasted caramel sweetness, and full-bodied richness in every single cup.
+                        </p>
+
+                        <!-- Quote Callout -->
+                        <div class="story-quote">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <span>"Every cup we pour carries our devotion to the craft, connecting cultures and communities one sip at a time."</span>
+                        </div>
+
+                        <!-- Milestone Pills -->
+                        <div class="story-milestones">
+                            <div class="milestone-pill">
+                                <i class="fa-solid fa-check"></i>
+                                <span>100% Fair Trade</span>
+                            </div>
+                            <div class="milestone-pill">
+                                <i class="fa-solid fa-fire"></i>
+                                <span>Small-Batch Roasted</span>
+                            </div>
+                            <div class="milestone-pill">
+                                <i class="fa-solid fa-users"></i>
+                                <span>Community Centric</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             WHY CHOOSE US SECTION (3-COLUMN FEATURES)
+             ========================================================================= -->
+        <section class="section why-section" id="why-choose-us">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="badge-tag">The Brew & Bean Difference</span>
+                    <h2 class="section-title">WHY <span>CHOOSE US?</span></h2>
+                    <p class="section-subtitle">
+                        Every detail of our craft is intentionally curated—from harvest to cup—to ensure your coffee moments are unforgettable.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature Card 1: Fresh Coffee -->
+                    <article class="feature-card reveal">
+                        <div>
+                            <div class="feature-icon-wrapper">
+                                <i class="fa-solid fa-mug-hot"></i>
+                            </div>
+                            <h3 class="feature-title">
+                                ☕ Fresh Coffee
+                            </h3>
+                            <p class="feature-desc">
+                                Roasted weekly in small micro-batches and ground mere seconds before extraction. This guarantees peak aromatic bloom, golden velvety crema, and flavor clarity that awakens all your senses.
+                            </p>
+                        </div>
+                        <div class="feature-footer">
+                            <span class="feature-tag">
+                                <i class="fa-solid fa-sparkles"></i> Daily Fresh Extraction
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- Feature Card 2: Quality Beans -->
+                    <article class="feature-card reveal reveal-delay-1">
+                        <div>
+                            <div class="feature-icon-wrapper">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <h3 class="feature-title">
+                                🌱 Quality Beans
+                            </h3>
+                            <p class="feature-desc">
+                                100% certified specialty-grade Arabica beans sourced through ethical direct-trade relationships. Sourced from high-altitude shade-grown estates that nurture nature and support farming communities.
+                            </p>
+                        </div>
+                        <div class="feature-footer">
+                            <span class="feature-tag">
+                                <i class="fa-solid fa-shield-halved"></i> 100% Single-Origin & Organic
+                            </span>
+                        </div>
+                    </article>
+
+                    <!-- Feature Card 3: Friendly Service -->
+                    <article class="feature-card reveal reveal-delay-2">
+                        <div>
+                            <div class="feature-icon-wrapper">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <h3 class="feature-title">
+                                ❤️ Friendly Service
+                            </h3>
+                            <p class="feature-desc">
+                                Our passionate baristas greet every guest with genuine warmth and care. Whether you are grabbing a quick espresso or spending hours reading in our sunlit corner, you are always part of our family.
+                            </p>
+                        </div>
+                        <div class="feature-footer">
+                            <span class="feature-tag">
+                                <i class="fa-solid fa-face-smile"></i> Welcoming Hospitality
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             INVITATION / CTA BANNER
+             ========================================================================= -->
+        <section class="cta-banner-section">
+            <div class="container">
+                <div class="cta-box reveal">
+                    <div class="cta-text-content">
+                        <h3>Experience Brew & Bean Today</h3>
+                        <p>
+                            Step into our coffee sanctuary. Smell the freshly roasted beans, meet our friendly baristas, and discover your new favorite brew.
+                        </p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="index.html#menu" class="btn btn-primary">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>View Our Menu</span>
+                        </a>
+                        <a href="index.html#contact" class="btn btn-outline" style="border-color: var(--accent-gold); color: var(--accent-gold);">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Find Our Café</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================================================
+         MINIMALIST FOOTER
+         ========================================================================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <!-- Brand -->
+            <div class="footer-brand">
+                <i class="fa-solid fa-mug-saucer" style="color: var(--accent-gold);"></i>
+                <span>Brew & Bean</span>
+            </div>
+
+            <!-- Links -->
+            <nav class="footer-links" aria-label="Footer Navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#menu">Menu</a>
+                <a href="index.html#offers">Offers</a>
+                <a href="index.html#gallery">Gallery</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="footer-socials">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>&copy; 2026 Brew & Bean Coffee House. All rights reserved. Handcrafted with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript Logic -->
+    <script src="about.js"></script>
+</body>
+</html>
